@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="nl.realworks.hellojdk17.service.CustomerAddressServiceTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-10-26T11:14:27" hostname="LA-CDURSUN" time="0.206">
+  <properties/>
+  <testcase name="testAddCustomerAddress_whenCustomerIdExist_shouldSaveAndReturnCustomerAddressDto()" classname="nl.realworks.hellojdk17.service.CustomerAddressServiceTest" time="0.2"/>
+  <testcase name="testAddCustomerAddress_whenCustomerIdDoesNotExist_shouldThrowCustomerNotFoundException()" classname="nl.realworks.hellojdk17.service.CustomerAddressServiceTest" time="0.005"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

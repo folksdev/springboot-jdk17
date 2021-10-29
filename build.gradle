@@ -1,0 +1,48 @@
+plugins {
+	id 'org.springframework.boot' version "${springBootVersion}"
+	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+	id 'java'
+	id "org.jetbrains.kotlin.jvm" version "${kotlinVersion}"
+	id "org.jetbrains.kotlin.plugin.allopen"version "${kotlinVersion}"
+	id "org.jetbrains.kotlin.plugin.spring" version "${kotlinVersion}"
+	id "org.jetbrains.kotlin.plugin.noarg" version "${kotlinVersion}"
+	id "org.jetbrains.kotlin.plugin.jpa" version "${kotlinVersion}"
+}
+
+
+
+group = 'nl.realworks'
+version = '0.0.1-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-actuator'
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-hateoas'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	implementation 'org.springframework.boot:spring-boot-starter-validation'
+	implementation 'org.springdoc:springdoc-openapi-ui:1.5.6'
+	implementation 'org.mapstruct:mapstruct:1.4.2.Final'
+
+	implementation 'org.jetbrains.kotlin:kotlin-reflect:1.5.30'
+	implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.5.30'
+	implementation 'com.fasterxml.jackson.module:jackson-module-kotlin'
+
+
+	annotationProcessor 'org.mapstruct:mapstruct-processor:1.4.2.Final'
+	runtimeOnly 'com.h2database:h2'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	runtimeOnly 'com.h2database:h2'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'junit:junit'
+	testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
+	testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
+}
+
+test {
+	useJUnitPlatform()
+}
